@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar Audio en una página HTML</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="imag/x-icon" href="src/refugio-de-animales.png">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Iconos Bootstrap -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+        
+</head>
+<body>
+
+    
+    <!-- Barra de navegación -->
+
+
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-Toggler">
+            <a class="navbar-brand" href="#"><img src="src/refugio-de-animales.png" width="50"
+                alt="Logo de la web"></a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#proyectos-recientes">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#articulos">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <h1>Felis Nigripes</h1>
+    
+
+
+    <!-- Carrusel con los gatos -->
+    
+    
+    <section>
+        <article>
+            <figure>
+                <h2>Gato de pies negros: el felino más letal del mundo</h2>
+
+                <div id="testimonios-carrusel" class="carousel slide carousel-dark slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <img class="foto-gato" src="src/gato1.jpg" alt="Gato 1">
+                                <p class="gato-texto">El gato patinegro, gato de pies negros o gato de patas negras (Felis nigripes) es una especie de felino salvaje, de aspecto
+                                fornido y pelaje manchado. Su nombre proviene del color de las plantas de sus patas, que están cubiertas de pelos negros
+                                que lo protegen del calor del desierto.</p>
+                                <div class="testimonio-info">
+                                    <audio controls>
+                                        <source src="src/gato1.mp3" type="audio/mpeg">
+                                        
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <img class="foto-gato" src="src/gato2.jpg" alt="Gato 2">
+                                <p class="gato-texto">El gato patinegro es una de las especies de felinos más pequeños que existen. Los machos adultos pesan entre 1,9 kg y un
+                                máximo de 2,45 kg. Las hembras adultas pesan entre 1,3 kg y un máximo de 1,65 kg.</p>
+                                <div class="testimonio-info">
+                                    <audio controls>
+                                        <source src="src/gato2.mp3" type="audio/mpeg">
+                                        
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <img class="foto-gato" src="src/gato3.jpg" alt="Gato 3">
+                                <p class="gato-texto">Este tipo de felino es el gato salvaje más pequeño de África, pero que no te engañe su adorable aspecto, es un cazador
+                                nato, con una tasa de mortalidad en sus presas superior a la de cualquier otro felino, y eso incluye leones y tigres.</p>
+                                <div class="testimonio-info">
+                                    <audio controls>
+                                        <source src="src/gato3.mp3" type="audio/mpeg">
+                                        
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <img class="foto-gato" src="src/gato4.jpg" alt="Gato 3">
+                                <p class="gato-texto">Debido a su pequeño tamaño, estos gatos cazan principalmente pequeñas presas, como roedores y aves pequeñas aunque
+                                también son capaces de cazar avutardas y liebres del Cabo, esta última más pesada que él. Son cazadores muy activos, llegando a matar hasta catorce pequeños animales en una noche.</p>
+                                <div class="testimonio-info">
+                                    <audio controls>
+                                        <source src="src/gato4.mp3" type="audio/mpeg">
+                                        
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </figure>
+        </article>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="src/refugio-de-animales.png" alt="Icono de la web">
+        <p class="footer-texto text-center">Aprendo todos los días <br> Creemos un proyecto juntos</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://x.com/?lang=es&mx=2" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://es.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:franc@micorreo.es/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Francisco Signes (2025) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
