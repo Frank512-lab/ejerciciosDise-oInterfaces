@@ -10,27 +10,29 @@ document.addEventListener("DOMContentLoaded", function () {
         ).textContent = `Hora actual: ${hora}:${minutos}:${segundos}`;
     }
 
+
+    
     // Actualizar el reloj cada segundo
     setInterval(actualizarReloj, 1000);
-    actualizarReloj(); 
+    actualizarReloj();
 
-    document.addEventListener("DOMContentLoaded", function () {
 
-        // Capturar el evento submit del formulario
-        
-        const formulario = document.getElementById("formulario");
 
-        formulario.addEventListener("submit", function (event) {
-            event.preventDefault(); 
+    // Capturar el evento submit del formulario
 
-            // Obtener los valores del formulario
-            const nombre = document.getElementById("nombre").value.trim();
-            const apellido1 = document.getElementById("apellido1").value.trim();
-            const apellido2 = document.getElementById("apellido2").value.trim();
+    const formulario = document.getElementById("formulario");
 
-            // Mostrar el mensaje con los datos ingresados
-            alert(`Mensaje recibido, señor ${nombre} ${apellido1} ${apellido2}`);
-        });
+    formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Obtener los valores del formulario
+        const nombre = document.getElementById("nombre").value.trim();
+        const apellido1 = document.getElementById("apellido1").value.trim();
+        const apellido2 = document.getElementById("apellido2").value.trim();
+
+        // Mostrar el mensaje con los datos ingresados
+        alert(`Mensaje recibido, señor ${nombre} ${apellido1} ${apellido2}`);
     });
+
 
 });
